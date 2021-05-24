@@ -10,9 +10,10 @@
 		80A30BE0265C69A4009B1138 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A30BDF265C69A4009B1138 /* AppDelegate.swift */; };
 		80A30BE2265C69A4009B1138 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A30BE1265C69A4009B1138 /* SceneDelegate.swift */; };
 		80A30BE4265C69A4009B1138 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A30BE3265C69A4009B1138 /* ViewController.swift */; };
-		80A30BE7265C69A4009B1138 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A30BE5265C69A4009B1138 /* Main.storyboard */; };
 		80A30BE9265C69A6009B1138 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80A30BE8265C69A6009B1138 /* Assets.xcassets */; };
 		80A30BEC265C69A6009B1138 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A30BEA265C69A6009B1138 /* LaunchScreen.storyboard */; };
+		80A30BF9265C6F25009B1138 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A30BF8265C6F25009B1138 /* ViewConfiguration.swift */; };
+		80A30C00265C6FCD009B1138 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A30BFF265C6FCD009B1138 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +21,11 @@
 		80A30BDF265C69A4009B1138 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80A30BE1265C69A4009B1138 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		80A30BE3265C69A4009B1138 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		80A30BE6265C69A4009B1138 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80A30BE8265C69A6009B1138 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80A30BEB265C69A6009B1138 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80A30BED265C69A6009B1138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80A30BF8265C6F25009B1138 /* ViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
+		80A30BFF265C6FCD009B1138 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +61,8 @@
 				80A30BDF265C69A4009B1138 /* AppDelegate.swift */,
 				80A30BE1265C69A4009B1138 /* SceneDelegate.swift */,
 				80A30BE3265C69A4009B1138 /* ViewController.swift */,
-				80A30BE5265C69A4009B1138 /* Main.storyboard */,
+				80A30BFF265C6FCD009B1138 /* BaseViewController.swift */,
+				80A30BF8265C6F25009B1138 /* ViewConfiguration.swift */,
 				80A30BE8265C69A6009B1138 /* Assets.xcassets */,
 				80A30BEA265C69A6009B1138 /* LaunchScreen.storyboard */,
 				80A30BED265C69A6009B1138 /* Info.plist */,
@@ -126,7 +129,6 @@
 			files = (
 				80A30BEC265C69A6009B1138 /* LaunchScreen.storyboard in Resources */,
 				80A30BE9265C69A6009B1138 /* Assets.xcassets in Resources */,
-				80A30BE7265C69A4009B1138 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +139,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80A30C00265C6FCD009B1138 /* BaseViewController.swift in Sources */,
 				80A30BE4265C69A4009B1138 /* ViewController.swift in Sources */,
+				80A30BF9265C6F25009B1138 /* ViewConfiguration.swift in Sources */,
 				80A30BE0265C69A4009B1138 /* AppDelegate.swift in Sources */,
 				80A30BE2265C69A4009B1138 /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +150,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		80A30BE5265C69A4009B1138 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				80A30BE6265C69A4009B1138 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		80A30BEA265C69A6009B1138 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
