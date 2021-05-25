@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		80A30BEC265C69A6009B1138 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A30BEA265C69A6009B1138 /* LaunchScreen.storyboard */; };
 		80A30BF9265C6F25009B1138 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A30BF8265C6F25009B1138 /* ViewConfiguration.swift */; };
 		80A30C00265C6FCD009B1138 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A30BFF265C6FCD009B1138 /* BaseViewController.swift */; };
+		80A30C04265C76A9009B1138 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 80A30C03265C76A9009B1138 /* Reachability */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80A30C04265C76A9009B1138 /* Reachability in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +88,9 @@
 			dependencies = (
 			);
 			name = "got data yet";
+			packageProductDependencies = (
+				80A30C03265C76A9009B1138 /* Reachability */,
+			);
 			productName = "got data yet";
 			productReference = 80A30BDC265C69A4009B1138 /* got data yet.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 80A30BD3265C69A4009B1138;
+			packageReferences = (
+				80A30C02265C76A9009B1138 /* XCRemoteSwiftPackageReference "Reachability" */,
+			);
 			productRefGroup = 80A30BDD265C69A4009B1138 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -337,6 +345,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		80A30C02265C76A9009B1138 /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		80A30C03265C76A9009B1138 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80A30C02265C76A9009B1138 /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 80A30BD4265C69A4009B1138 /* Project object */;
 }
