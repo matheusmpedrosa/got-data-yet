@@ -14,8 +14,16 @@ class BaseViewController: UIViewController {
         setUp()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        navigationItem.largeTitleDisplayMode = .always
+    }
+    
     private func setUp() {
         view.backgroundColor = .systemBackground
+        navigationController?.navigationBar.tintColor = .systemBlue
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.navigationBar.backgroundColor = .systemBackground
     }
 
 }
